@@ -33,7 +33,7 @@ app.use((err, req, res, next) => {
 
 connectDB();
 
-app.get("/", (res, req) => {
+app.get("/", (req,res) => {
   res.status(200).send("Welcome to the API");
 });
 
